@@ -17160,84 +17160,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="1812">
-<description>Multilayer SMD</description>
-<wire x1="-2.3" y1="0" x2="2.4" y2="0" width="0.127" layer="51"/>
-<wire x1="-2.8004" y1="1.7113" x2="2.8004" y2="1.7113" width="0.127" layer="21"/>
-<wire x1="2.8004" y1="1.7113" x2="2.8004" y2="-1.7113" width="0.127" layer="51"/>
-<wire x1="2.8004" y1="-1.7113" x2="-2.8004" y2="-1.7113" width="0.127" layer="21"/>
-<wire x1="-2.8004" y1="-1.7113" x2="-2.8004" y2="1.7113" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="0" x2="1.7" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.07" layer="21"/>
-<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.07" layer="51"/>
-<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.07" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.07" layer="51"/>
-<smd name="1" x="-2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<smd name="2" x="2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
-<text x="-1.8575" y="1.905" size="0.6096" layer="27">&gt;VALUE</text>
-<text x="-1.8575" y="-2.54" size="0.6096" layer="25">&gt;NAME</text>
-<rectangle x1="-0.9" y1="-0.3" x2="0.9" y2="0.3" layer="21"/>
-<rectangle x1="-0.6" y1="-0.3" x2="0.5" y2="0.3" layer="21"/>
-</package>
-<package name="R1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FUSE">
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-126.869898"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
-<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PTCFUSE" prefix="F" uservalue="yes">
-<description>PTC fuses, resettable thermistors</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="-1812" package="1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1206" package="R1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-LED">
 <description>&lt;h3&gt;SparkFun LEDs&lt;/h3&gt;
 This library contains discrete LEDs for illumination or indication, but no displays.
@@ -17790,6 +17712,84 @@ Standard 0402 sized pads with cathode pin indicator.
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="1812">
+<description>Multilayer SMD</description>
+<wire x1="-2.3" y1="0" x2="2.4" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.8004" y1="1.7113" x2="2.8004" y2="1.7113" width="0.127" layer="21"/>
+<wire x1="2.8004" y1="1.7113" x2="2.8004" y2="-1.7113" width="0.127" layer="51"/>
+<wire x1="2.8004" y1="-1.7113" x2="-2.8004" y2="-1.7113" width="0.127" layer="21"/>
+<wire x1="-2.8004" y1="-1.7113" x2="-2.8004" y2="1.7113" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="0" x2="1.7" y2="0" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.07" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.07" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.07" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.07" layer="51"/>
+<smd name="1" x="-2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
+<smd name="2" x="2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
+<text x="-1.8575" y="1.905" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.8575" y="-2.54" size="0.6096" layer="25">&gt;NAME</text>
+<rectangle x1="-0.9" y1="-0.3" x2="0.9" y2="0.3" layer="21"/>
+<rectangle x1="-0.6" y1="-0.3" x2="0.5" y2="0.3" layer="21"/>
+</package>
+<package name="R1206">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSE">
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-126.869898"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTCFUSE" prefix="F" uservalue="yes">
+<description>PTC fuses, resettable thermistors</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="-1812" package="1812">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1206" package="R1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17820,9 +17820,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value=".1uf"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value=".1uf"/>
 <part name="X2" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-4" device="" package3d_urn="urn:adsk.eagle:package:10695/1" value="Terminal"/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="PTC FUSE"/>
-<part name="F2" library="adafruit" deviceset="PTCFUSE" device="-1206" value="PTC FUSE"/>
-<part name="F3" library="adafruit" deviceset="PTCFUSE" device="-1206" value="PTC FUSE"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
@@ -17841,6 +17838,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <part name="JP14" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
 <part name="JP15" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
 <part name="JP16" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
+<part name="F2" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
+<part name="F3" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
 </parts>
 <sheets>
 <sheet>
@@ -17957,18 +17957,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <attribute name="VALUE" x="309.88" y="153.797" size="1.778" layer="96"/>
 <attribute name="NAME" x="290.449" y="154.94" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="F1" gate="G$1" x="274.32" y="142.24" smashed="yes">
-<attribute name="VALUE" x="270.51" y="140.97" size="1.778" layer="96"/>
-<attribute name="NAME" x="270.51" y="147.32" size="1.778" layer="95"/>
-</instance>
-<instance part="F2" gate="G$1" x="274.32" y="132.08" smashed="yes">
-<attribute name="VALUE" x="270.51" y="130.81" size="1.778" layer="96"/>
-<attribute name="NAME" x="270.51" y="137.16" size="1.778" layer="95"/>
-</instance>
-<instance part="F3" gate="G$1" x="274.32" y="121.92" smashed="yes">
-<attribute name="VALUE" x="270.51" y="120.65" size="1.778" layer="96"/>
-<attribute name="NAME" x="270.51" y="127" size="1.778" layer="95"/>
-</instance>
 <instance part="D1" gate="G$1" x="210.82" y="106.68" smashed="yes" rot="R180">
 <attribute name="NAME" x="214.249" y="111.252" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="208.915" y="111.252" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
@@ -18033,6 +18021,18 @@ Standard 0402 sized pads with cathode pin indicator.
 <instance part="JP16" gate="A" x="132.08" y="162.56" smashed="yes">
 <attribute name="NAME" x="125.73" y="173.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.73" y="147.32" size="1.778" layer="96"/>
+</instance>
+<instance part="F1" gate="G$1" x="274.32" y="142.24" smashed="yes">
+<attribute name="VALUE" x="270.51" y="140.97" size="1.778" layer="96"/>
+<attribute name="NAME" x="270.51" y="147.32" size="1.778" layer="95"/>
+</instance>
+<instance part="F2" gate="G$1" x="274.32" y="132.08" smashed="yes">
+<attribute name="VALUE" x="270.51" y="130.81" size="1.778" layer="96"/>
+<attribute name="NAME" x="270.51" y="137.16" size="1.778" layer="95"/>
+</instance>
+<instance part="F3" gate="G$1" x="274.32" y="121.92" smashed="yes">
+<attribute name="VALUE" x="270.51" y="120.65" size="1.778" layer="96"/>
+<attribute name="NAME" x="270.51" y="127" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -18188,7 +18188,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="195.58" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="132.08" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
 <junction x="190.5" y="132.08"/>
-<pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="269.24" y1="144.78" x2="254" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
@@ -18248,6 +18247,7 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="195.58" y1="162.56" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
 <junction x="195.58" y="132.08"/>
 <junction x="190.5" y="162.56"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -18303,9 +18303,9 @@ Standard 0402 sized pads with cathode pin indicator.
 <junction x="190.5" y="127"/>
 <pinref part="X2" gate="-2" pin="KL"/>
 <wire x1="299.72" y1="149.86" x2="299.72" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="121.92" x2="279.4" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="121.92" x2="279.4" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="114.3" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="121.92" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="121.92" x2="276.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="114.3" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="114.3" x2="259.08" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="254" y1="114.3" x2="248.92" y2="114.3" width="0.1524" layer="91"/>
@@ -18598,13 +18598,13 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="X2" gate="-4" pin="KL"/>
 <pinref part="X1" gate="-1" pin="KL"/>
 <wire x1="289.56" y1="149.86" x2="289.56" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="F3" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="124.46" x2="289.56" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="124.46" x2="289.56" y2="124.46" width="0.1524" layer="91"/>
 <junction x="289.56" y="124.46"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="289.56" y1="149.86" x2="289.56" y2="162.56" width="0.1524" layer="91"/>
 <junction x="289.56" y="149.86"/>
+<pinref part="F3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -18612,13 +18612,13 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="X2" gate="-1" pin="KL"/>
 <pinref part="X1" gate="-4" pin="KL"/>
 <wire x1="304.8" y1="149.86" x2="304.8" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="304.8" y1="144.78" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="144.78" x2="304.8" y2="144.78" width="0.1524" layer="91"/>
 <junction x="304.8" y="144.78"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="304.8" y1="162.56" x2="304.8" y2="149.86" width="0.1524" layer="91"/>
 <junction x="304.8" y="149.86"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -18626,18 +18626,17 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="X2" gate="-3" pin="KL"/>
 <pinref part="X1" gate="-2" pin="KL"/>
 <wire x1="294.64" y1="149.86" x2="294.64" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="F2" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="134.62" x2="294.64" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="134.62" x2="294.64" y2="134.62" width="0.1524" layer="91"/>
 <junction x="294.64" y="134.62"/>
 <pinref part="P-1" gate="1" pin="-12V"/>
 <wire x1="294.64" y1="101.6" x2="294.64" y2="119.38" width="0.1524" layer="91"/>
 <junction x="294.64" y="119.38"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="269.24" y1="134.62" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -18747,6 +18746,7 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="198.12" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
 <junction x="198.12" y="121.92"/>
 <junction x="190.5" y="152.4"/>
+<pinref part="F2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18916,7 +18916,6 @@ Standard 0402 sized pads with cathode pin indicator.
 <pinref part="JP13" gate="A" pin="6"/>
 <wire x1="182.88" y1="165.1" x2="190.5" y2="165.1" width="0.1524" layer="91"/>
 <junction x="182.88" y="165.1"/>
-<pinref part="F3" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="+"/>
@@ -18982,6 +18981,7 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="205.74" y1="165.1" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <junction x="190.5" y="165.1"/>
 <junction x="205.74" y="134.62"/>
+<pinref part="F3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
