@@ -6,3 +6,5 @@ Here is some 3D printable cases to fit the bus boards
 https://www.thingiverse.com/thing:6074179
 
 https://www.thingiverse.com/thing:6085424
+
+7/9/23 - board was updated. Fixed a silkscreen issue (no biggie) and added part numbers to the BOM for the leds and updated the resistors to help equalize the LED brightness. Little better now. 
