@@ -17810,9 +17810,9 @@ chip</description>
 <part name="JP7" library="pinhead+" deviceset="PINHD-2X8" device="SMT" value="header"/>
 <part name="JP8" library="pinhead+" deviceset="PINHD-2X8" device="SMT" value="header"/>
 <part name="X1" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-4" device="" package3d_urn="urn:adsk.eagle:package:10695/1" value="Terminal"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="500"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="500"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="500"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.2k"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="47uf"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="47uf"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="47uf"/>
@@ -17838,9 +17838,9 @@ chip</description>
 <part name="JP14" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
 <part name="JP15" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
 <part name="JP16" library="pinhead+" deviceset="PINHD-2X8" device="" value="header1"/>
-<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
-<part name="F2" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
-<part name="F3" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.5A hold PTC"/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.1A hold PTC fuse "/>
+<part name="F2" library="adafruit" deviceset="PTCFUSE" device="-1812" value=".5A hold PTC fuse"/>
+<part name="F3" library="adafruit" deviceset="PTCFUSE" device="-1812" value="1.1A hold PTC fuse"/>
 </parts>
 <sheets>
 <sheet>
