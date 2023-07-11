@@ -1,8 +1,8 @@
 Qty Value               Device        Package     Parts                                         Description                          MF MPN OC_FARNELL OC_NEWARK POPULARITY PROD_ID   SPICEPREFIX VALUE
 3   .1uf                C-USC0805K    C0805K      C4, C5, C6                                    CAPACITOR, American symbol                                       19                   C                
-1   .5A hold PTC fuse   PTCFUSE-1812  1812        F2                                            PTC fuses, resettable thermistors                                                                      
-1   1.1A hold PTC fuse  PTCFUSE-1812  1812        F3                                            PTC fuses, resettable thermistors                                                                      
-1   1.1A hold PTC fuse  PTCFUSE-1812  1812        F1                                            PTC fuses, resettable thermistors                                                                      
+1   .5A hold PTC fuse   PTCFUSE-1812  1812        F2 mouser 576-1812L050PR                      PTC fuses, resettable thermistors                                                                      
+1   1.1A hold PTC fuse  PTCFUSE-1812  1812        F3 mouser 530-0ZCG0110AF2C                    PTC fuses, resettable thermistors                                                                      
+1   1.1A hold PTC fuse  PTCFUSE-1812  1812        F1 mouser 530-0ZCG0110AF2C                    PTC fuses, resettable thermistors                                                                      
 1   1.2k                R-US_R0805    R0805       R3                                            RESISTOR, American symbol                                        85                   R                
 1   1k                  R-US_R0805    R0805       R1                                            RESISTOR, American symbol                                        85                   R                
 1   330                 R-US_R0805    R0805       R2                                            RESISTOR, American symbol                                        85                   R                
